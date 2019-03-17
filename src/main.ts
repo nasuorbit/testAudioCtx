@@ -12,6 +12,9 @@ gainRange.value = player.getMasterGain().toString()
 gainRange.onchange = (e) => {
   player.setMasterGain(parseFloat(gainRange.value))
 }
+sineSpeed.value = "0.2"
 sineLoadBtn.onclick = () => {
   player.load(sineWave(parseFloat(sineSpeed.value)))
 }
+
+player.load(sineWave(parseFloat(sineSpeed.value)))
