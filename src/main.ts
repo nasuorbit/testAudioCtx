@@ -1,6 +1,6 @@
-import { playBtn, stopBtn, gainRange, sineLoadBtn, sineSpeed } from './constant'
+import { playBtn, stopBtn, gainRange, sineLoadBtn, sineSpeed, kickLoadBtn, sampleSpeed } from './constant'
 import { ngPlayer } from './player/player'
-import { sineWave } from './player/sample'
+import { sineWave, kick } from './player/sample'
 
 const player = new ngPlayer
 
@@ -15,6 +15,9 @@ gainRange.onchange = (e) => {
 sineSpeed.value = "0.2"
 sineLoadBtn.onclick = () => {
   player.load(sineWave(parseFloat(sineSpeed.value)))
+}
+kickLoadBtn.onclick = () => {
+  player.load(kick(parseFloat(sampleSpeed.value)))
 }
 
 player.load(sineWave(parseFloat(sineSpeed.value)))
