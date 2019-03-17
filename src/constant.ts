@@ -6,3 +6,4 @@ export const sineLoadBtn = document.getElementById("load-sinewave")!;
 
 export const sampleSpeed = <HTMLInputElement>document.getElementById("sample-speed")!;
 export const kickLoadBtn = document.getElementById("load-kick")!;
+export const mouseChaosLoadBtn = document.getElementById("load-mouse-chaos")!;
