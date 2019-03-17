@@ -1,4 +1,4 @@
-import { sineWave } from './sample'
+//import { sineWave } from './sample'
 export class ngPlayer {
   audioCtx: AudioContext
   mixerNode: ScriptProcessorNode

@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "del doc /Q && parcel build src/index.html -d doc"
+    "build": "del docs /Q && parcel build src/index.html -d doc"
   },
   "license": "MIT",
   "devDependencies": {
