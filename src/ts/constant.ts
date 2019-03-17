@@ -1,0 +1,1 @@
+export const startBtn = document.getElementById("start")!;

@@ -1,0 +1,12 @@
+{
+  "name": "ng-audio-context",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.3.3333"
+  }
+}
