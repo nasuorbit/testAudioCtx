@@ -11,8 +11,9 @@ export class ngPlayer {
     this.masterGainNode.connect(this.audioCtx.destination);
   }
 
-  load() {
-    this.mixerNode.onaudioprocess = sineWave(0)
+  load(fn: (this: ScriptProcessorNode, ev: AudioProcessingEvent) => any) {
+    this.mixerNode.onaudioprocess = fn;
+    //sineWave(0.1)
   }
 
   play() {

@@ -1,9 +1,9 @@
-export const sineWave = (defx: number) => {
-  let x = defx;
+export const sineWave = (speed=0.2) => {
+  let x = 0
   return (e: AudioProcessingEvent) => {
     const data = e.outputBuffer.getChannelData(0);
     for (let i = 0; i < data.length; ++i) {
-      x+=0.2;
+      x+=speed;
       data[i] = Math.sin(x);
     }
   }
