@@ -5,6 +5,6 @@ parcelRequire=function(e,r,n,t){var i="function"==typeof parcelRequire&&parcelRe
 },{}],"Wiuz":[function(require,module,exports) {
 "use strict";exports.__esModule=!0,exports.sineWave=function(t){void 0===t&&(t=.2);var e=0;return function(n){for(var r=n.outputBuffer.getChannelData(0),o=0;o<r.length;++o)e+=t,r[o]=Math.sin(e)}};
 },{}],"ZCfc":[function(require,module,exports) {
-"use strict";exports.__esModule=!0;var e=require("./constant"),n=require("./player/player"),a=require("./player/sample"),t=new n.ngPlayer;e.playBtn.onclick=function(){t.play()},e.stopBtn.onclick=function(){t.stop()},e.gainRange.value=t.getMasterGain().toString(),e.gainRange.onchange=function(n){t.setMasterGain(parseFloat(e.gainRange.value))},e.sineLoadBtn.onclick=function(){t.load(a.sineWave(parseFloat(e.sineSpeed.value)))};
+"use strict";exports.__esModule=!0;var e=require("./constant"),a=require("./player/player"),n=require("./player/sample"),i=new a.ngPlayer;e.playBtn.onclick=function(){i.play()},e.stopBtn.onclick=function(){i.stop()},e.gainRange.value=i.getMasterGain().toString(),e.gainRange.onchange=function(a){i.setMasterGain(parseFloat(e.gainRange.value))},e.sineSpeed.value="0.2",e.sineLoadBtn.onclick=function(){i.load(n.sineWave(parseFloat(e.sineSpeed.value)))},i.load(n.sineWave(parseFloat(e.sineSpeed.value)));
 },{"./constant":"PXcJ","./player/player":"DG8J","./player/sample":"Wiuz"}]},{},["ZCfc"], null)
-//# sourceMappingURL=/main.82eda9bd.map
+//# sourceMappingURL=/main.b32b130c.map
