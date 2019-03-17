@@ -7,4 +7,4 @@ parcelRequire=function(e,r,n,t){var i="function"==typeof parcelRequire&&parcelRe
 },{}],"ZCfc":[function(require,module,exports) {
 "use strict";exports.__esModule=!0;var e=require("./constant"),a=require("./player/player"),n=require("./player/sample"),i=new a.ngPlayer;e.playBtn.onclick=function(){i.play()},e.stopBtn.onclick=function(){i.stop()},e.gainRange.value=i.getMasterGain().toString(),e.gainRange.onchange=function(a){i.setMasterGain(parseFloat(e.gainRange.value))},e.sineSpeed.value="0.2",e.sineLoadBtn.onclick=function(){i.load(n.sineWave(parseFloat(e.sineSpeed.value)))},i.load(n.sineWave(parseFloat(e.sineSpeed.value)));
 },{"./constant":"PXcJ","./player/player":"DG8J","./player/sample":"Wiuz"}]},{},["ZCfc"], null)
-//# sourceMappingURL=/main.b32b130c.map
+//# sourceMappingURL=/main.0b970201.map
